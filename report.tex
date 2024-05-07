@@ -1,0 +1,77 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\pdfoutput=1
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsthm,amssymb,color,doi,graphicx,latexsym,url,xcolor,xspace}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\usepackage{sectsty}
+
+\allsectionsfont{\boldmath}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\local}{\ensuremath{\mathsf{LOCAL}}\xspace}
+
+\definecolor{citecolor}{HTML}{0000C0}
+\definecolor{urlcolor}{HTML}{000080}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=citecolor,
+    filecolor=black,
+    urlcolor=urlcolor,
+    pdftitle={}, % FIXME: Title
+    pdfauthor={} % FIXME: Authors
+}
+
+\title{Filtering: A methods for Solving Graph Problems in MapReduce -- First Draft}
+\author{He Xinyu}
+
+% Document contents start here
+
+\begin{document}
+
+
+\maketitle
+
+
+\begin{abstract}
+  The graph data from both industry and academia can be too large to compute in one machine's RAM. To be able to process this data, the MapReduce framework was created to split the graph data into multiple small data and then process them in parallel. In the original paper, the author presents a general algorithmic design technique in the MapReduce framework called \textit{filtering}. Filtering reduces the size of the input into distributed forms and uses distributed machines to solve the targeted problems. The first draft of this paper only showcases the understanding of the problem and the research plan. The full understanding of the given paper is not accomplished in this phase, and errors are likely to be present in this draft.
+\end{abstract}
+
+
+\section{Introduction}
+
+How important the problem is? What is the problem? How do we solve it in the past?
+
+What is MapReduce in a nutshell? What is filtering? in mathematic ways.
+
+Conclusions \cite{Filtering2011}
+
+
+\section{Overview}
+
+The overview of the MapReduce, and the problems discussed in the paper: Connected components and minimum spanning trees; unweighted maximal matchings; maximum weighted matching; minimum edge cover and minimum cut.
+
+\section{Outline of the future work}
+
+It is very difficult to understand the paper without prior knowledge of the related field. It is first priority to fully understand the problems mentioned in the paper and gain more insight into the MapReduce framework. 
+
+1. more surveys into the problems discussed in the framework. 
+2. combining the findings in the problems itself, gain more knowledge and understanding in the MapReduce framework. 
+
+Timeline written here.
+
+
+\pagebreak % We can have a page break before references.
+\bibliographystyle{plainnat}
+\bibliography{references} 
+
+\end{document}
